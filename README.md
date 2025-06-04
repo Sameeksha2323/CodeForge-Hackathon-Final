@@ -1,64 +1,96 @@
 
 
-#  MediShare: Smart Medicine Redistribution Platform
+# 🏥 MediShare: Smart Medicine Redistribution Platform
 
-##  Project Overview
-MediiShare is an AI-powered platform designed to reduce medical waste and improve healthcare access by enabling the smart redistribution of unused, sealed medicines. It establishes a streamlined, three-level ecosystem:
+MediShare is an **AI & OCR-powered** platform that **reduces medical waste** and **improves healthcare access** by enabling the **smart redistribution** of unused, sealed medicines.  
 
-*Donors (Hospitals & Pharmacies) upload surplus medicines.
+## 🌍 Project Overview  
+MediShare creates a **three-level donation ecosystem**:  
 
-*NGOs verify, collect, and manage the donations.
+|  Donors (Hospitals & Pharmacies) |  NGOs |  Recipients (Clinics & Communities) |
+|-------------------------------------|--------|--------------------------------------|
+| Upload surplus medicines. | Verify, collect, and manage donations. | Receive medicines based on real-time needs. |
 
-*Recipients (low-income clinics or communities) receive the medicines based on real-time needs.
+By combining **AI, OCR, and smart logistics**, MediShare ensures **verified, efficient, and timely** medicine delivery—**turning waste into life-saving support**.  
 
-By combining AI, OCR, and smart logistics, MediiShare ensures efficient, verified, and timely delivery of medicines—transforming waste into life-saving support.
+---
 
-## Key Features 
-*🔍 OCR-Based Medicine Verification
-Extracts medicine names, expiry dates, and active ingredients from uploaded images.
-Uses tools like OCR Space, Google Vision API, and AWS Textract for accurate data capture.
+## 👥 Meet Our Team  
+**Track:** Open Innovation  
 
-*🧠  AI-Based Matching of Medicines
-Analyzes similarity in composition and ingredient match between donated and required medicines.
-Ensures recipients receive therapeutically equivalent drugs, not just exact matches.
+| Name          | Year | College |
+|--------------|------|---------|
+| Sameeksha   | 3rd  | DTU     |
+| Soumya Garg | 2nd  | DTU     |
+| Deepanshi   | 3rd  | DTU     |
+| Tasneem Ahmed | 3rd | DTU |
 
-*📍Location-Based Filtering with Maps
-Leaflet.js is used for seamless map integration and location filtering.
-Helps NGOs prioritize local matches and optimize logistics based on proximity.
+---
 
-*💬Multilingual Chatbot Support
-Provides voice and text-based assistance to all stakeholders in multiple Indian languages.
-Ensures inclusivity for NGOs, hospitals, and rural recipients.
+## 🚀 Key Features  
+
+| Feature  | Description |
+|----------|------------|
+| 📄 **OCR-Based Medicine Verification** | Extracts **medicine names, expiry dates, and active ingredients** from images using **OCR Space** & **Google AI Studio API**. |
+| 🧠 **AI-Based Medicine Matching** | Ensures **therapeutically equivalent** medicine matches based on composition and active ingredients. |
+| 📍 **Location-Based Filtering with Maps** | Uses **Leaflet.js** to filter medicines based on **proximity and logistics optimization**. |
+| 💬 **Multilingual Chatbot Support** | Provides **voice & text-based assistance** in **multiple Indian languages**. |
+
+---
+
+## 🚀 LOGIN DETAILS FOR WEBSITE  
+
+| Role  | Login | Password | 
+|----------|------------|----------|
+| Admin | admin1@gmail.com | 1234 |
+| Donor | donor1@gmail.com | 1234 |
+| NGO | ngo1@gmail.com | 1234 |
+| Recipient | recipient1@gmail.com | 1234 |
+
+---
 
 
-## Problems Solved
-*Medical Waste: Tackles the ₹15,000–₹18,000 crore worth of unused medicines wasted annually in India.
+## 🎯 Problems Solved  
 
-*Lack of Access: Bridges the gap for low-income communities that lack basic medicines.
+✅ **Medical Waste** – Reduces **₹15,000–₹18,000 crore** worth of medicines wasted annually.  
+✅ **Lack of Access** – Provides low-income communities with **affordable medicine options**.  
+✅ **Environmental Pollution** – Lowers **pharmaceutical waste** polluting **soil & water**.  
+✅ **Inefficient Donation Systems** – Replaces **manual, unverified donations** with **AI, OCR & smart logistics**.  
 
-*Environmental Pollution: Reduces pharmaceutical waste that pollutes soil and water.
+---
+## 🔗Dependencies
 
-*Inefficient Donation Systems: Replaces manual, unverified donation processes with AI, OCR, and smart logistics.
-
-## Dependencies
-
-1. Frontend: 
-Node.js (Latest LTS),
-React.js, Next.js, Vite,
+1. **Frontend**: 
+React.js, Typescript, Vite,
 Tailwind CSS,
-Supabase SDK,
 Leaflet(For map integration),
 Recharts(for anayltics implementation)
 
 
-3. Backend:
+2. **Backend**:
 Python 3.9+,
 PostgreSQL (via Supabase),
 OCR.space API, 
-Google studio GEMINI(1.5 Pro) API key,
+Google studio GEMINI(1.5 Pro) API key.
 
 
-## Setup Instructions 
+3. **Deployment**:
+Vercel
+
+3. **Microservices**:
+FAST API,
+FLASK API
+---
+📺 **Demo Video**: https://youtu.be/ybJOB2mnxnA
+
+📺 **Deployed Website**: https://medishare-codeforge-hackathon.vercel.app/
+
+📺 **Project PPT**: https://drive.google.com/file/d/1lUZlGHH2q16Q0lDHgLI5_Pz3NlVYDahl/view
+
+
+---
+
+## 🛠️Setup Instructions 
 1. Clone the repository :
    Git Clone https://github.com/Sameeksha2323/Codeforge-Hackathon-Project
    cd medishare
@@ -82,35 +114,42 @@ Google studio GEMINI(1.5 Pro) API key,
    Frontend: npm run dev  (Starts the React/Next.js frontend)
    Backend: python backend/app.py (starts the backend server) 
 
-## Usage
+## 📌 Usage  
 
-1. Click "Choose File" to upload a medicine label image
-2. Click "Extract Text" to process the image
-4. View the extracted information in the form fields and formatted display
+#### **🔹 For Donors**  
+✔ Click **"Add Donations"** to donate medicines.           
+✔ The platform extracts medicine details automatically (name, expiry date, ingredients) using **OCR & Gemini AI** .                    
+✔ All donations are **subject to Admin approval** before being available for NGOs to claim.  
 
+#### **🔹 For NGOs**  
+✔ Browse **"Available Medicines"** to find donations.  
+✔ View and approve recipient requests under **"Requested Medicines"**.  
+✔ Use the **Maps feature** to find nearby **Donors** and optimize donation logistics.  
+✔ Access **Impact Analytics** for donation insights.  
 
+#### **🔹 For Recipients**  
+✔ Log in and navigate to the **Recipient Dashboard**.  
+✔ Submit medicine requests which will be furthur approved by the admin.  
 
-## Team Members
-*Sameeksha Gupta (3rd Year) - Backend Development
+#### **🔹 For Admins**  
+✔ Verify new users (only verified users can log in).  
+✔ Approve/reject:  
+   - *Donations* submitted by donors.  
+   - *Requests* made by recipients to prevent misuse.  
 
-*Deepanshi (3rd Year) - AI & OCR Integration
-
-*Tasneem Ahmed (3rd Year) - Frontend Development
-
-*Soumya Garg (2nd Year) - Database & API Integration
-
+---
 
 ## License
 This project is licensed under the MIT License.
 
-## Contribution Guidelines
+## 💡Contribution Guidelines
 1.Fork the repository and create a new branch for your contributions.
 
 2.Submit a pull request with a clear description of your changes.
 
 3.Follow coding best practices and maintain proper documentation.
 
-## Future Plans
+## 🚀Future Plans
 *📱 Mobile App for Households
 Develop a user-friendly mobile app that allows individuals and families to donate unused, sealed medicines—extending the redistribution network beyond hospitals and pharmacies.
 
